@@ -1,0 +1,122 @@
+*{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    outline: none;
+}
+body {
+        background-color: #ffccdf;
+        overflow: hidden;
+}
+.all{
+                    max-width:950px ;
+                    width: 80%;
+                    height: 400px;
+                    margin: 120px auto;
+                    position: relative;
+
+}
+.box_silder {
+        max-width:750px;
+        width: 80%;
+        max-height: 400px;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        /* border: 1px solid; */
+}
+.container{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width:100% ;
+                    height: 100%;
+}
+.container .prod{
+
+                    width: calc(94%/3);
+                    min-height: 350px;
+                    max-height: 450px;
+                    text-align: center;
+                    margin: 0  1%;
+                    transition: all 2s linear;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    flex-shrink: 0;
+}
+
+.container .prod span{
+        display: block;
+        height: 15px;
+        border-radius: 50px;
+        margin: 10px auto;
+
+}
+.container .prod span:nth-of-type(1){
+        min-width: 90px;
+        max-width: 60%;
+        background-color:rgb(214 103 255);
+
+}
+.container .prod span:nth-of-type(2){
+        min-width: 150px;
+        max-width: 80%;
+        background-color: rgb(228 155 255);
+
+}
+.container .prod span:nth-of-type(3){
+        min-width: 110px;
+        max-width: 65%;
+        background-color: rgb(220 169 239);
+
+}
+.container .prod span:nth-of-type(4){
+        min-width: 130px;
+        max-width: 50%;
+        height: 35px;
+        margin: 20px auto;
+        background-color: rgb(223 194 234);
+
+}
+.container .prod img{
+   width: 100%;
+   min-height: 170px;
+   max-height: 200px;
+   margin-bottom: 20px;
+   display: inline-block;
+
+}
+ button{
+                    position: absolute;
+                    top: 50%;
+                    z-index: 10;
+                    cursor: pointer;
+                    border: none;
+                    background: none;
+                    color: #fff;
+}
+ button:first-of-type{
+                    left: -10px;
+}
+ button:nth-of-type(2){
+                    right: -10px;
+}
+button i{
+        font-size: 40px;
+        color: red;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+.container .prod {
+        width: calc(96%/2);
+        margin: 0  1%;
+        box-shadow: none;
+}
+}
+@media (min-width: 320px) and (max-width: 767px) {
+.container .prod {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+}
+}
